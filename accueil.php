@@ -55,6 +55,7 @@
       </tbody>
 
     <?php
+    //this is a comment
       while ($row = $result->fetch_array()){
         $requete_nbV = "SELECT count(*) from `Est_present` ep WHERE ep.idM = ".$row['idM']." GROUP BY ep.idM" ;
         $row_nbV = mysqli_query($idConnexion , $requete_nbV) or die("Error") ;
